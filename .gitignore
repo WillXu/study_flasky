@@ -1,2 +1,8 @@
 # Virtual environment
 venv
+
+# py cache directory
+__pycache__
+
+#used for win env
+*.bat
