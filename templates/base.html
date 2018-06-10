@@ -6,9 +6,13 @@
 {{ super() }}
 <link rel="short icon" type="image/x-icon" href="{{ url_for('static', filename = 'favicon.ico')}}">
 <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'favicon.ico')}}">
-
 {% endblock %}
 
+{% block scripts %}
+{{super()}}
+{{ moment.include_moment() }}
+{{ moment.locale('zh-cn') }}
+{% endblock %}
 
 {% block navbar %}
 <div class="navbar navbar-inverse" role="navigation">
