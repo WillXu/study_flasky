@@ -6,3 +6,7 @@ __pycache__
 
 #used for win env
 *.bat
+
+
+# SQLite databases
+*.sqlite
