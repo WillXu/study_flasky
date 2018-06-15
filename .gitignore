@@ -13,3 +13,6 @@ __pycache__
 
 # directory
 migrations
+
+#test file
+tmp_test.py
