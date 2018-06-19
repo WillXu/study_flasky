@@ -11,6 +11,14 @@
 	{% else %}
 	<p>很高兴再次见到你！</p>
 	{% endif %}
+
+	你好
+	{% if current_user.is_authenticated %}
+		{{ current_user.username}}
+	{% else %}
+		陌生人
+	{% endif %}
+
 </div>
 {{ wtf.quick_form(form) }}
 <p>the local date and time is {{ moment(current_time).format('LLL') }}.</p>
